@@ -21,8 +21,8 @@ def assign_rooms(speakers)
 # array.each_index {|x| puts "Hello, #{array[x]}! You'll be assigned to room #{x + 1}" }
 room_number = 1 
 room_messages = []
-  speakers.each do |name|
-  room_messages << "Hello, #{name}! You'll be assigned to room #{room_number}!"
+  speakers.each do |speakers|
+  room_messages << "Hello, #{speakers}! You'll be assigned to room #{room_number}!"
   room_number += 1
   end
   room_messages
