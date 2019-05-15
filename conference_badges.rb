@@ -29,6 +29,14 @@ room_messages = []
   room_messages
 end
 
-# def printer
-#   assign_rooms(names)
-# end
+def printer(speakers)
+  # outputs the results of batch_badge_creator, and assign_rooms
+  badge_messages = batch_badge_creator(speakers)
+  badge_messages.each do |message|
+    puts message
+  end
+  room_messages = assign_rooms(speakers)
+  room_messages.each do |message|
+    puts message
+  end
+end
