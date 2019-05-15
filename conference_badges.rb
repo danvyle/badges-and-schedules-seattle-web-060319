@@ -11,6 +11,10 @@ end
 def batch_badge_creator(name)
 badge_names = []
 badge_names << badge_maker(name)
+  badge_names.each do |name|
+  message = badge_maker(name)
+  badge_messages << message
+  end
 end
 
 def batch_badge_creator(speakers)
