@@ -15,6 +15,7 @@ badge_names << badge_maker(name)
   message = badge_maker(name)
   badge_messages << message
   end
+  badge_messages
 end
 
 def assign_rooms(name)
@@ -25,6 +26,7 @@ room_messages = []
   room_messages << "Hello, #{name}! You'll be assigned to room #{room_number}!"
   room_number += 1
   end
+  room_messages
 end
 
 
