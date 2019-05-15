@@ -17,15 +17,14 @@ badge_names = []
   badge_names
 end
 
-def assign_rooms(name)
-# array.each_index {|x| puts "Hello, #{array[x]}! You'll be assigned to room #{x + 1}" }
-room_number = 1 
-room_messages = []
-  name.each do |name|
-  room_messages << "Hello, #{name}! You'll be assigned to room #{room_number}!"
-  room_number += 1
+def batch_badge_creator(speakers)
+  # returns an array of badge messages, using badge_maker
+  badge_messages = []
+  speakers.each do |speaker|
+    message = badge_maker(speaker)
+    badge_messages << message
   end
-  room_messages
+  badge_messages
 end
 
 
