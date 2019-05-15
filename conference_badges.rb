@@ -29,6 +29,8 @@ room_messages = []
 end
 
 
+
+
 # def printer
 #   assign_rooms(names)
 # end
