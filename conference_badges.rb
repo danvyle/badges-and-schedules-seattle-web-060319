@@ -17,11 +17,11 @@ def batch_badge_creator(speakers)
   badge_messages
 end
 
-def assign_rooms(name)
+def assign_rooms(speakers)
 # array.each_index {|x| puts "Hello, #{array[x]}! You'll be assigned to room #{x + 1}" }
 room_number = 1 
 room_messages = []
-  name.each do |name|
+  speakers.each do |name|
   room_messages << "Hello, #{name}! You'll be assigned to room #{room_number}!"
   room_number += 1
   end
